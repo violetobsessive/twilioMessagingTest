@@ -47,7 +47,7 @@ The application is configured to connect to Vault using the following properties
 ```properties
 # Vault Configuration
 spring.cloud.vault.enabled
-spring.cloud.vault.uri=
+spring.cloud.vault.uri
 spring.cloud.vault.authentication=APPROLE
 spring.cloud.vault.app-role.role-id
 spring.cloud.vault.app-role.secret-id
@@ -192,19 +192,6 @@ Content-Type: application/json
 3. **Access Control**: Vault provides fine-grained access control via AppRole
 4. **Audit Trail**: Vault logs all credential access
 5. **Credential Rotation**: Easy to rotate credentials without code changes
-
-## Comparison with Cashbook Pattern
-
-This implementation follows the exact same pattern used in the Cashbook codebase:
-
-### MongoDB Pattern (Cashbook)
-```java
-// MongoDatabaseConfiguration.java
-location = "database/mongodb/";
-location = location + ((String) SysValues.getVal(SysValues.PROPERTY_RUNTIME));
-kvo = template.opsForKeyValue("secret", KeyValueBackend.KV_1);
-response = kvo.get(location);
-```
 
 ### Twilio Pattern (This Project)
 ```java
