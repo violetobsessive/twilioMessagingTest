@@ -33,10 +33,10 @@ Using the Vault UI or CLI, create a secret at path `secret/twilio` with the foll
 
 ```json
 {
-  "account_sid": "AC5130fd1b9b078ca4",
-  "auth_token": "d8a2759ea474cff0d6",
-  "user": "marian@cashbook.com",
-  "password": "Cashbook!"
+  "account_sid": "",
+  "auth_token": "",
+  "user": "",
+  "password": ""
 }
 ```
 
@@ -46,11 +46,11 @@ The application is configured to connect to Vault using the following properties
 
 ```properties
 # Vault Configuration
-spring.cloud.vault.enabled=true
-spring.cloud.vault.uri=https://localhost:8200
+spring.cloud.vault.enabled
+spring.cloud.vault.uri=
 spring.cloud.vault.authentication=APPROLE
-spring.cloud.vault.app-role.role-id=1a28fbae-1a3e-ebb3-ce10-833834658429
-spring.cloud.vault.app-role.secret-id=0df80ef2-b59c-24df-a886-ce5fe8c1c499
+spring.cloud.vault.app-role.role-id
+spring.cloud.vault.app-role.secret-id
 
 # SSL Configuration for Vault
 spring.cloud.vault.ssl.trust-store=classpath:cacert.pem
