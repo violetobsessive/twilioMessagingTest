@@ -1,6 +1,6 @@
 # Twilio Vault Integration
 
-This project demonstrates how to integrate HashiCorp Vault with a Spring Boot application to securely manage Twilio API credentials, following the same pattern used in the Cashbook codebase for MongoDB and ActiveMQ.
+This project demonstrates how to integrate HashiCorp Vault with a Spring Boot application to securely manage Twilio API credentials, following the same pattern used in the codebase for MongoDB and ActiveMQ.
 
 ## Overview
 
