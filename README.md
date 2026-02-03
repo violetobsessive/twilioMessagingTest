@@ -13,7 +13,6 @@ The application uses Spring Vault to retrieve Twilio credentials (Account SID an
 1. **TwilioConfiguration** (`twilio/messaging/twilio/VaultConfig/TwilioConfiguration.java`)
    - Spring `@Configuration` class that retrieves Twilio credentials from Vault
    - Provides `TwilioRestClient` bean and credential beans (`twilioAccountSid`, `twilioAuthToken`)
-   - Uses the same pattern as `MongoDatabaseConfiguration` in the Cashbook codebase
 
 2. **TwilioService** (`twilio/messaging/twilio/service/TwilioService.java`)
    - Service layer that handles Twilio messaging operations
